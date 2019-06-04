@@ -1,0 +1,276 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 14,
+        "name": "To go to BBC weather page and see southampton forecast",
+        "description": "",
+        "id": "to-test-a-website;to-go-to-bbc-weather-page-and-see-southampton-forecast;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13420029936,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "customer open \"FIREFOX\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FIREFOX",
+                  "offset": 15
+                }
+              ],
+              "location": "CheckWeather.customer_open(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4437137789,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "customer is on bbc weather page \"BbcWeather\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BbcWeather",
+                  "offset": 33
+                }
+              ],
+              "location": "CheckWeather.customer_is_on_bbc_weather_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 527603242,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "customer types \"so146hz\" in the \"CitySearchBox\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "so146hz",
+                  "offset": 16
+                },
+                {
+                  "val": "CitySearchBox",
+                  "offset": 33
+                }
+              ],
+              "location": "CheckWeather.customer_types_in_the(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 415623207,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "customer clicks \"Keys.ENTER\" in \"CitySearchBox\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Keys.ENTER",
+                  "offset": 17
+                },
+                {
+                  "val": "CitySearchBox",
+                  "offset": 33
+                }
+              ],
+              "location": "CheckWeather.customer_clicks_in(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1954702341,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "customer should see forcast displayed showing \"Area\" on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Area",
+                  "offset": 47
+                }
+              ],
+              "location": "CheckWeather.customer_should_see_forcast_displayed_showing_on_the_page(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6788833811,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "customer closes browser",
+            "match": {
+              "location": "CheckWeather.customer_closes_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@CheckWeather"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "To go to BBC weather page and see southampton forecast",
+        "description": "",
+        "id": "to-test-a-website;to-go-to-bbc-weather-page-and-see-southampton-forecast;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6584775863,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "customer open \"CHROME\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CHROME",
+                  "offset": 15
+                }
+              ],
+              "location": "CheckWeather.customer_open(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3199195704,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "customer is on bbc weather page \"BbcWeather\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BbcWeather",
+                  "offset": 33
+                }
+              ],
+              "location": "CheckWeather.customer_is_on_bbc_weather_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 519289508,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "customer types \"so146hz\" in the \"CitySearchBox\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "so146hz",
+                  "offset": 16
+                },
+                {
+                  "val": "CitySearchBox",
+                  "offset": 33
+                }
+              ],
+              "location": "CheckWeather.customer_types_in_the(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 548243505,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "customer clicks \"Keys.ENTER\" in \"CitySearchBox\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Keys.ENTER",
+                  "offset": 17
+                },
+                {
+                  "val": "CitySearchBox",
+                  "offset": 33
+                }
+              ],
+              "location": "CheckWeather.customer_clicks_in(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4227238278,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "customer should see forcast displayed showing \"Area\" on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Area",
+                  "offset": 47
+                }
+              ],
+              "location": "CheckWeather.customer_should_see_forcast_displayed_showing_on_the_page(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6254646921,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "customer closes browser",
+            "match": {
+              "location": "CheckWeather.customer_closes_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@CheckWeather"
+          }
+        ]
+      }
+    ],
+    "name": "To test a website",
+    "description": "",
+    "id": "to-test-a-website",
+    "keyword": "Feature",
+    "uri": "CheckWeather.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@CheckWeather"
+      }
+    ]
+  }
+]

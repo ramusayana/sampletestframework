@@ -1,0 +1,257 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>DownloadWebTests</groupId>
+	<artifactId>DownloadWebTests</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<profiles>
+		<profile>
+			<id>selenium-tests</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-failsafe-plugin</artifactId>
+						<version>2.16</version>
+						<configuration>
+						</configuration>
+						<executions>
+							<execution>
+								<goals>
+									<goal>integration-test</goal>
+									<goal>verify</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.16</version>
+						<configuration>
+							<systemPropertyVariables>
+								<BrowserType>Firefox</BrowserType>
+							</systemPropertyVariables>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>selenium-test-firefox</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<version>1.1</version>
+						<executions>
+							<execution>
+								<phase>validate</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<echo>Executing only the openspace 4.0.0 on internet explorer
+											on windows tests</echo>
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.5</version>
+						<configuration>
+							<systemProperties>
+								<property>
+									<name>log4j.configuration</name>
+									<value>log4j.properties</value>
+								</property>
+								<property>
+									<name>PARAMETERS</name>
+									<value>FIREFOX</value>
+								</property>
+							</systemProperties>
+							<parallel>classes</parallel>
+							<!-- <includes> <include>uk/co/ordnancesurvey/openspace/maintestfunctions/*.*</include> 
+								</includes> -->
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<properties>
+		<cucumber-jvm.version>1.1.4</cucumber-jvm.version>
+		<selenium.version>2.53.1</selenium.version>
+		<junit.version>4.11</junit.version>
+	</properties>
+	
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>src/test/resources</directory>
+			</resource>
+		</resources>
+
+		<testResources>
+			<testResource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>log4j.properties</include>
+				</includes>
+			</testResource>
+		</testResources>
+
+         <!-- Required Plugins  -->
+
+		<plugins>
+    		<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<executions>
+					<execution>
+						<phase>integration-phase</phase>
+
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<executableDependency>
+						<groupId>info.cukes</groupId>
+						<artifactId>cucumber-core</artifactId>
+					</executableDependency>
+
+					<mainClass>cucumber.api.cli.Main</mainClass>
+					<arguments>
+						<argument>--format</argument>
+						<argument>junit:target/cucumber-junit-report/allcukes.xml</argument>
+						<argument>--format</argument>
+						<argument>pretty</argument>
+						<argument>--format</argument>
+						<argument>html:target/cucumber-html-report</argument>
+						<argument>--tags</argument>
+						<argument>@login</argument>
+						<argument>--glue</argument>
+						<argument>com/</argument>
+						<argument>src/</argument>
+
+					</arguments>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>info.cukes</groupId>
+						<artifactId>cucumber-core</artifactId>
+						<version>1.2.5</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+
+	</build>
+
+<!-- Required Dependencies  -->
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-failsafe-plugin</artifactId>
+			<version>2.20.1</version>
+			<type>maven-plugin</type>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>23.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20171018</version>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>1.2.5</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-picocontainer</artifactId>
+			<version>1.2.5</version>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>1.2.5</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-api</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-remote-driver</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-support</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-firefox-driver</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>3.13.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.picocontainer</groupId>
+			<artifactId>picocontainer</artifactId>
+			<version>2.15</version>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-jvm-deps</artifactId>
+			<version>1.0.5</version>
+		</dependency>
+	</dependencies>
+	<description>Download WEB APP Automation Tests</description>
+</project>

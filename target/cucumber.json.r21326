@@ -1,0 +1,1187 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 64,
+            "value": "#| FIREFOX |"
+          }
+        ],
+        "line": 65,
+        "name": "To Test MyDownloadsPage with Single Zip Button with Estimated Size",
+        "description": "",
+        "id": "to-test-mydownloads-page;to-test-mydownloadspage-with-single-zip-button-with-estimated-size;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6210713989,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "customer open \"CHROME\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CHROME",
+                  "offset": 15
+                }
+              ],
+              "location": "MyDownloadsPage.customer_open(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 276503381,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "customer is on MyDownloads page \"DownloadServiceURL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DownloadServiceURL",
+                  "offset": 33
+                }
+              ],
+              "location": "MyDownloadsPage.customer_is_on_MyDownloads_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3181103295,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "customer enter \"highways@os.uk\" as user name in \"UserNamesInputField\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "highways@os.uk",
+                  "offset": 16
+                },
+                {
+                  "val": "UserNamesInputField",
+                  "offset": 49
+                }
+              ],
+              "location": "MyDownloadsPage.customer_enter_as_user_name_in(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2101262865,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "customer enter \"Passw0rd2\" as password in \"PasswordInputField\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Passw0rd2",
+                  "offset": 16
+                },
+                {
+                  "val": "PasswordInputField",
+                  "offset": 43
+                }
+              ],
+              "location": "MyDownloadsPage.customer_enter_as_password_in(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1318136430,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "customer press Sign in Button \"SignInButton\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SignInButton",
+                  "offset": 31
+                }
+              ],
+              "location": "MyDownloadsPage.customer_press_Sign_in_Button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 74963507,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "customer see the \"downloadTitle\" as \"Download Orders for highways-test-account-1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "downloadTitle",
+                  "offset": 18
+                },
+                {
+                  "val": "Download Orders for highways-test-account-1",
+                  "offset": 37
+                }
+              ],
+              "location": "MyDownloadsPage.customer_see_the_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6073190045,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "customer should see link \"All Orders\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "All Orders",
+                  "offset": 26
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6080853232,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "customer should see link \"Only My Orders\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Only My Orders",
+                  "offset": 26
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74135096,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "customer should see \"AllDownloadOrders\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AllDownloadOrders",
+                  "offset": 21
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47709090,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "customer should see image \"OSlogo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OSlogo",
+                  "offset": 27
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_image(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41857473,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "customer should see image \"Refresh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Refresh",
+                  "offset": 27
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_image(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31587023,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "customer should see link \"Next\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Next",
+                  "offset": 26
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_link_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44275340,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "customer should see link \"Last\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Last",
+                  "offset": 26
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_link_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172889245,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "customer should see dropdown \"ItemsperpageDropDown\" exists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ItemsperpageDropDown",
+                  "offset": 30
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_dropdown_exists(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71629075,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "customer should see the \"OrdersTable\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OrdersTable",
+                  "offset": 25
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_the_is_displayed(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6066874565,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "customer should see link \"Order No.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Order No.",
+                  "offset": 26
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6124508034,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "customer should see link \"Order Type\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Order Type",
+                  "offset": 26
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6085424892,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "customer should see link \"Product (Format)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Product (Format)",
+                  "offset": 26
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6074073889,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "customer should see link \"Delivery Contact\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Delivery Contact",
+                  "offset": 26
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6076306210,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "customer should see link \"Order Date\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Order Date",
+                  "offset": 26
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6092220789,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "customer should see link \"Order Detail\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Order Detail",
+                  "offset": 26
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61559183,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "customer should see the \"orderDetailTxt\" as",
+            "match": {
+              "arguments": [
+                {
+                  "val": "orderDetailTxt",
+                  "offset": 25
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_the_as(String,String)"
+            },
+            "keyword": "Then ",
+            "doc_string": {
+              "content_type": "",
+              "line": 27,
+              "value": "Online Ref. N/A\nHolding No.: 40031377\nYour reference: fixed GB area update full download\nProduct Version: Highways Network RAMI 01.04.2017\nChange Since: N/A\nNumber of Files: 4\nEstimated Download Size: 1.4 GB "
+            }
+          },
+          {
+            "result": {
+              "duration": 63590946,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "customer should see the \"Download\" as not link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Download",
+                  "offset": 25
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_the_as_not_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6095380838,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "customer should see link \"Logout\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Logout",
+                  "offset": 26
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1709719280,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "customer click on \"DownloadLink\" for the first order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DownloadLink",
+                  "offset": 19
+                }
+              ],
+              "location": "MyDownloadsPage.customer_click_on_for_the_first_order(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 72802401,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "customer should navigate to second page where he can see \"Orderdownloadheading\" as \"Order download\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Orderdownloadheading",
+                  "offset": 58
+                },
+                {
+                  "val": "Order download",
+                  "offset": 84
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_navigate_to_second_page_where_he_can_see_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6066938081,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "customer should see link \"Download FAQs\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Download FAQs",
+                  "offset": 26
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6121608596,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "customer should see link \"Go back to all orders\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Go back to all orders",
+                  "offset": 26
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82511595,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "customer should see the account information on the top rightside \"AccountInfo\" as",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AccountInfo",
+                  "offset": 66
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_the_account_information_on_the_top_rightside_as(String,String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "content_type": "",
+              "line": 43,
+              "value": "You are logged in as Highways Tester Analyst\nfrom highways-test-account-1 (0100027585)"
+            }
+          },
+          {
+            "result": {
+              "duration": 73820592,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "customer should see the \"downloadZipButton\" with the name as \"Download zip (4 files)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "downloadZipButton",
+                  "offset": 25
+                },
+                {
+                  "val": "Download zip (4 files)",
+                  "offset": 62
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_the_with_the_name_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79426225,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "customer should see \"downloadButtonHeader\" with the text \"Grouped downloads\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "downloadButtonHeader",
+                  "offset": 21
+                },
+                {
+                  "val": "Grouped downloads",
+                  "offset": 58
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_with_the_text(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73909900,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "customer should see \"downloadButtonLabel\" with the text \"Download multiple files at a time:\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "downloadButtonLabel",
+                  "offset": 21
+                },
+                {
+                  "val": "Download multiple files at a time:",
+                  "offset": 57
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_with_the_text(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3828808766,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "customer click the \"downloadZipButton\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "downloadZipButton",
+                  "offset": 20
+                }
+              ],
+              "location": "MyDownloadsPage.customer_click_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33406294,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "customer should see image \"OSlogo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OSlogo",
+                  "offset": 27
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_image(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71249130,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "customer should see order details information \"orderDetails\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "orderDetails",
+                  "offset": 47
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_order_details_information(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2228951737,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "customer should see Download links \"orderLinks\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "orderLinks",
+                  "offset": 36
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_Download_links(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 930065088,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "customer clicks on \"Gobacktoallorderse\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gobacktoallorderse",
+                  "offset": 20
+                }
+              ],
+              "location": "MyDownloadsPage.customer_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6241189278,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "customer should see link \"Logout\" and click to logout",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Logout",
+                  "offset": 26
+                }
+              ],
+              "location": "PaginationAndSorting.customer_should_see_link_and_click_to_logout(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2945558145,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "Customer should see the \"LogoutMsg\" as shown below",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LogoutMsg",
+                  "offset": 25
+                }
+              ],
+              "location": "PaginationAndSorting.Customer_should_see_the_as_shown_below(String,String)"
+            },
+            "keyword": "Then ",
+            "doc_string": {
+              "content_type": "",
+              "line": 57,
+              "value": " Thank you for your visit, please follow this link to return to the Ordnance Survey website\nor this link to return to your Members\u0027 area."
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@mydownloadspage"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 102,
+            "value": "#| FIREFOX |"
+          }
+        ],
+        "line": 103,
+        "name": "To Test Morethan 3 Zip Buttons with Actual Download Size",
+        "description": "",
+        "id": "to-test-mydownloads-page;to-test-morethan-3-zip-buttons-with-actual-download-size;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3845030535,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "customer open \"CHROME\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CHROME",
+                  "offset": 15
+                }
+              ],
+              "location": "MyDownloadsPage.customer_open(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 293772982,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "customer is on MyDownloads page \"DownloadServiceURL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DownloadServiceURL",
+                  "offset": 33
+                }
+              ],
+              "location": "MyDownloadsPage.customer_is_on_MyDownloads_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3258910424,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "customer enter \"acc25344@ordnancesurvey.co.uk\" as user name in \"UserNamesInputField\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "acc25344@ordnancesurvey.co.uk",
+                  "offset": 16
+                },
+                {
+                  "val": "UserNamesInputField",
+                  "offset": 64
+                }
+              ],
+              "location": "MyDownloadsPage.customer_enter_as_user_name_in(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2110976678,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "customer enter \"Passw0rd1\" as password in \"PasswordInputField\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Passw0rd1",
+                  "offset": 16
+                },
+                {
+                  "val": "PasswordInputField",
+                  "offset": 43
+                }
+              ],
+              "location": "MyDownloadsPage.customer_enter_as_password_in(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1459104516,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "customer press Sign in Button \"SignInButton\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SignInButton",
+                  "offset": 31
+                }
+              ],
+              "location": "MyDownloadsPage.customer_press_Sign_in_Button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 74058491,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "customer should see the \"orderDetailTxt\" as",
+            "match": {
+              "arguments": [
+                {
+                  "val": "orderDetailTxt",
+                  "offset": 25
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_the_as(String,String)"
+            },
+            "keyword": "Then ",
+            "doc_string": {
+              "content_type": "",
+              "line": 74,
+              "value": "Online Ref. 8397817\nHolding No.: 0040032458\nYour reference: Automation Test Order Zip UI Change\nProduct Version: June 2017 supply\nChange Since: N/A\nNumber of Files: 1376\nDownload Size: 10.3 GB"
+            }
+          },
+          {
+            "result": {
+              "duration": 2004557801,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "customer click on \"DownloadLink\" for the first order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DownloadLink",
+                  "offset": 19
+                }
+              ],
+              "location": "MyDownloadsPage.customer_click_on_for_the_first_order(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 110518588,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "customer should navigate to second page where he can see \"Orderdownloadheading\" as \"Order download\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Orderdownloadheading",
+                  "offset": 58
+                },
+                {
+                  "val": "Order download",
+                  "offset": 84
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_navigate_to_second_page_where_he_can_see_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61616156,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "customer should see the \"downloadZipButton1\" with the name as \"Download zip 1 (394 files)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "downloadZipButton1",
+                  "offset": 25
+                },
+                {
+                  "val": "Download zip 1 (394 files)",
+                  "offset": 63
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_the_with_the_name_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71101309,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "customer should see the \"downloadZipButton2\" with the name as \"Download zip 2 (253 files)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "downloadZipButton2",
+                  "offset": 25
+                },
+                {
+                  "val": "Download zip 2 (253 files)",
+                  "offset": 63
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_the_with_the_name_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67578252,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "customer should see the \"downloadZipButton3\" with the name as \"Download zip 3 (310 files)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "downloadZipButton3",
+                  "offset": 25
+                },
+                {
+                  "val": "Download zip 3 (310 files)",
+                  "offset": 63
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_the_with_the_name_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76036360,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "customer should see the \"downloadZipButton4\" with the name as \"Download zip 4 (113 files)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "downloadZipButton4",
+                  "offset": 25
+                },
+                {
+                  "val": "Download zip 4 (113 files)",
+                  "offset": 63
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_the_with_the_name_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83362718,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "customer should see the \"downloadZipButton5\" with the name as \"Download zip 5 (239 files)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "downloadZipButton5",
+                  "offset": 25
+                },
+                {
+                  "val": "Download zip 5 (239 files)",
+                  "offset": 63
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_the_with_the_name_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62696709,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "customer should see the \"downloadZipButton6\" with the name as \"Download zip 6 (67 files)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "downloadZipButton6",
+                  "offset": 25
+                },
+                {
+                  "val": "Download zip 6 (67 files)",
+                  "offset": 63
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_the_with_the_name_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64696906,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "customer should see \"fewFilesAtATimeAllowedMessage\" with the text \"(Your browser may only allow you to download a few zips at a time)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fewFilesAtATimeAllowedMessage",
+                  "offset": 21
+                },
+                {
+                  "val": "(Your browser may only allow you to download a few zips at a time)",
+                  "offset": 67
+                }
+              ],
+              "location": "MyDownloadsPage.customer_should_see_with_the_text(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 929898789,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "customer clicks on \"Gobacktoallorderse\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gobacktoallorderse",
+                  "offset": 20
+                }
+              ],
+              "location": "MyDownloadsPage.customer_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6215364563,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "customer should see link \"Logout\" and click to logout",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Logout",
+                  "offset": 26
+                }
+              ],
+              "location": "PaginationAndSorting.customer_should_see_link_and_click_to_logout(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5130990968,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "Customer should see the \"LogoutMsg\" as shown below",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LogoutMsg",
+                  "offset": 25
+                }
+              ],
+              "location": "PaginationAndSorting.Customer_should_see_the_as_shown_below(String,String)"
+            },
+            "keyword": "Then ",
+            "doc_string": {
+              "content_type": "",
+              "line": 95,
+              "value": " Thank you for your visit, please follow this link to return to the Ordnance Survey website\nor this link to return to your Members\u0027 area."
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@mydownloadspage"
+          }
+        ]
+      }
+    ],
+    "name": "To Test MyDownloads Page",
+    "description": "",
+    "id": "to-test-mydownloads-page",
+    "keyword": "Feature",
+    "uri": "features\\MyDownloadsPage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@mydownloadspage"
+      }
+    ]
+  }
+]
